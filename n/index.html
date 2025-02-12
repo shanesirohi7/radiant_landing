@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.25">
+    <title>Radiant - The New Social Media For The New Generation</title>
+    <link rel="icon" type="image/png" href="icon.png">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto+Mono:wght@400;700&display=swap">
+    <style>
+      body {
+          background-color: #000;
+          color: #fff;
+          font-family: 'Roboto Mono', monospace;
+          margin: 0;
+          overflow-x: hidden;
+          scroll-behavior: smooth; /* Smooth scrolling */
+      }
+
+      section {
+          padding: 120px 0; /* Increased padding */
+          opacity: 0;
+          transform: translateY(50px); /* Increased initial movement */
+          transition: opacity 1s ease, transform 1s ease; /* Slower transitions */
+      }
+
+      section.active {
+          opacity: 1;
+          transform: translateY(0);
+      }
+
+      .parallax {
+          background-image: url('bg.avif');
+          background-attachment: fixed;
+          background-size: cover;
+          background-position: center;
+          min-height: 700px; /* Increased height */
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          color: #fff;
+          text-align: center;
+      }
+
+      .parallax h1 {
+          font-size: 6em; /* Larger font size */
+          margin-bottom: 30px;
+          transition: transform 1s ease, opacity 1s ease; /* Parallax title transitions */
+      }
+
+      .parallax p {
+          font-size: 3em; /* Larger font size */
+          margin-bottom: 50px;
+          transition: transform 1s ease, opacity 1s ease; /* Parallax subtitle transitions */
+      }
+
+      .container {
+          width: 90%;
+          max-width: 1200px; /* Increased max-width */
+          margin: 0 auto;
+          text-align: center;
+      }
+
+      .logo {
+          width: 100px; /* Larger logo */
+          margin-bottom: 40px;
+          display: block;
+          border-radius: 100px;
+          margin-left: auto;
+          margin-right: auto;
+          transition: transform 1s ease, opacity 1s ease; /* Logo transitions */
+      }
+
+      h2 {
+          font-size: 2.5em; /* Larger font size */
+          margin-bottom: 30px;
+          transition: transform 1s ease, opacity 1s ease; /* Heading transitions */
+      }
+
+      p {
+          font-size: 1.2em; /* Larger font size */
+          line-height: 1.8; /* Improved line height */
+          margin-bottom: 30px;
+          transition: transform 1s ease, opacity 1s ease; /* Paragraph transitions */
+      }
+
+      ul {
+          list-style-type: none; /* Remove bullet points */
+          padding: 0;
+          margin: 0 auto; /* Center the list */
+          max-width: 600px; /* Set a maximum width for the list */
+      }
+
+      li {
+          font-size: 1.2em;
+          margin-bottom: 20px;
+          text-align: left; /* Align list items to the left */
+          transition: transform 1s ease, opacity 1s ease; /* List item transitions */
+      }
+
+      strong {
+          font-weight: bold;
+      }
+
+      /* ... (Funding, Positions, Investor Relations styles remain the same) */
+
+      /* Added transitions to Funding and Position elements */
+      .funding-meter, .position-listing {
+          transition: transform 1s ease, opacity 1s ease;
+      }
+
+      /* Added transitions to Investor Relations elements */
+      #investors h2, #investors p, #investors a {
+          transition: transform 1s ease, opacity 1s ease;
+      }
+
+      /* Footer Styles */
+      footer {
+          background-color: #111;
+          padding: 40px 0;
+          text-align: center;
+          font-size: 1em;
+          color: #eee;
+          transition: transform 1s ease, opacity 1s ease; /* Footer transitions */
+      }
+
+      footer a {
+          color: #6f42c1;
+          text-decoration: none;
+          transition: color 0.3s ease;
+      }
+
+      footer a:hover {
+          color: #563d7c;
+      }
+      .tech-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+    justify-items: center;
+}
+
+.tech-card {
+    background: #111;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    transition: transform 0.3s ease, background 0.3s ease;
+    cursor: pointer;
+}
+
+.tech-card:hover {
+    transform: scale(1.1);
+    background: #222;
+}
+
+.tech-card img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.tech-card h3 {
+    font-size: 1em;
+    color: #fff;
+}
+
+      </style>
+</head>
+<body>
+
+    <section class="parallax">
+        <h1>Radiant</h1>
+        <p>Releasing On 1st April(Beta)</p>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <img src="logo.png" alt="Radiant Logo" class="logo">
+            <h2>About Radiant</h2>
+            <p><strong>Radiant – Your School. Your People. Your Social Network.</strong></p>
+
+            <p>Forget cluttered social media. Radiant is an exclusive, school-based platform designed for students to connect, share, and be part of their real school community.</p>
+            
+            <p>💬 <strong>Chat & Make Communities:</strong> Make communities on any topic with the people of your school<br>
+            🎉 <strong>Join School Events:</strong> Stay updated with all events happening in your school and join the ones you're interested in<br>
+            🗣️ <strong>Threads:</strong> Discuss or criticise your school on any topic (sky's the limit)<br>
+            🔒 <strong>Safe & Private:</strong> No outsiders, just you and your closest friends<br>
+            📷 <strong>Store Memories:</strong> Store memories of your school years in a public gallery of all your class students<br></p>
+            
+            <p>We built Radiant to take the whole school and college social experience online and of course because Instagram simply <b>Sucks</b></p><br>
+            
+        </div>
+    </section>
+
+    <section id="features">
+        <div class="container">
+            <h2>Key Features</h2>
+            <p>Radiant offers a range of features tailored to the needs of students:</p>
+            <ul>
+                <li><strong>Class and Section-based Groups:</strong> Text anyone in pre made class and section based groups.</li>
+                <li><strong>Interest-based Communities:</strong> Join groups based on your hobbies, passions, and extracurricular activities.</li>
+                <li><strong>Secure and Private Environment:</strong> Interact in a safe and moderated space, protected from unwanted access.</li>
+                <li><strong>Modern and Intuitive Interface:</strong> Enjoy a smooth UI with 200+ themes to keep you entertained.</li>
+                <li><strong>Announcements and Events:</strong> Stay informed about news related to school clubs/groups and participate in events held in school.</li>
+                <li><strong>Random Match:</strong> Get randomly matched with anyone in your school for a fun anonymous conversation, after which you can chose to send a request or not.</li>
+                <li><strong>Anonymous Threads:</strong> Share your thoughts on your school in anonymous threads just like reddit.</li>
+                <li><strong>Interactive Anonymous Polls:</strong> Create polls on any topic and vote on them anonymously.</li>
+                <li><strong>Leaderboard:</strong> Be on top of leaderboards by staying active and engaging with your school.</li>
+                <li><strong>Clubs:</strong> Join and stay updated about all the clubs in your school.</li>
+                <li><strong>Badges:</strong> Earn badges by participating in events, joining clubs, and staying active on Radiant.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="funding">
+        <div class="container">
+            <h2>Funding</h2>
+            <p>We are currently raising seed funding to accelerate our development and expand our reach to more schools.</p>
+            <div class="funding-meter">
+                <div class="funding-meter-fill" style="width: 60%;"></div>
+            </div>
+            <div class="funding-text">$300 / $1000 Raised</div>
+            <p>If you're interested in investing in Radiant and helping us empower student communities, please contact us at <a href="mailto:investor@radiantapp.com">investors@radiantapp.com</a> or our <a href='https://instagram.com/app.radiant'>Instagram</a></p>
+        </div>
+    </section>
+
+    <section id="positions">
+        <div class="container">
+            <h2>Open Positions</h2>
+            <p>Join our team and help us build the future of Social Media!</p>
+            <div class="position-listing">
+                <h3 class="position-title">Frontend Developer (1.1% ESOP)</h3>
+                <p>Be the best at what you do, we don't care about anything other than that.</p>
+            </div>
+            <div class="position-listing">
+                <h3 class="position-title">Backend Developer (1.1% ESOP)</h3>
+                <p>Be capable enough of competing with the best backend developers in the world at Meta and Other Tech Giants.</p>
+            </div>
+            <div class="position-listing">
+                <h3 class="position-title">Marketing (0.5% ESOP)</h3>
+                <p>Motivated enough to drive a big change and compete with Tech Giants worth billions.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="investors">
+      <div class="container">
+          <h2>🔥 The Next Social Media Revolution is Here</h2>
+          <p><strong>Big Tech built social media for themselves. We’re building it for the people.</strong> Radiant is taking over schools, one campus at a time, and rewriting the rules of online connection.</p>
+  
+          <p>The old platforms? Cluttered, ad-driven, and designed to keep users hooked in an algorithmic loop. **We’re here to kill that.** No mindless scrolling. No corporate control. Just raw, real, **student-first social networking.**</p>
+  
+          <p><strong>Big Tech had their time. This is ours.</strong> We’re not here to ask for funding. We’re here to bring on investors who see the future before everyone else. The ones who don’t wait for trends—they create them.</p>
+  
+          <p>🚀 **You in, or watching from the sidelines?**</p>
+  
+          <p>💰 <a href="mailto:investors@radiantapp.com"><strong>investors@radiantapp.com</strong></a></p>
+          <p>📄 <a href="pitch.pdf"><strong>See the Vision – Download the Pitch Deck</strong></a></p>
+      </div>    
+  </section>
+  <section id="tech-stack">
+    <div class="container">
+        <h2>⚡ Built Different</h2>
+        <p>No bloat. No fluff. Just pure speed and power.</p>
+        
+        <div class="tech-grid">
+            <div class="tech-card" data-tech="react">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React Native">
+                <h3>R. Native</h3>
+            </div>
+            <div class="tech-card" data-tech="express">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLG-N028bTJp3uj9yWfv6QO-4C3t-m29FefA&s" alt="Express.js">
+                <h3>Express</h3>
+            </div>
+            <div class="tech-card" data-tech="mongodb">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB">
+                <h3>MongoDB</h3>
+            </div>
+            <div class="tech-card" data-tech="cloudinary">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMj2GFYbSnPo9nTCLe3MQ_wtTQvUhsSnB1IA&s" alt="Cloudinary">
+                <h3>Cldinary</h3>
+            </div>
+            <div class="tech-card" data-tech="jwt">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJH65M2lbWisGxCCZh9Ib5jTq41HXBv2nRKg&s" alt="JWT">
+                <h3>JWT</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+  
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Radiant. All rights reserved. | <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a> | <a href="/contact">Contact Us</a></p>
+            <p>Special thanks to the developers, designers, and investors who made this project possible. And most importantly, thank you to the students and educators who inspire us to build a better future for education.</p>
+            <p>A big thanks to the IT teachers of SAJS for supporting us and helping us build this project.</p>
+        </div>
+    </footer>
+
+    <script>
+        const sections = document.querySelectorAll('section');
+
+        function handleScroll() {
+            sections.forEach(section => {
+                const triggerPoint = window.innerHeight * 0.8;
+                const sectionTop = section.getBoundingClientRect().top;
+
+                if (sectionTop < triggerPoint) {
+                    section.classList.add('active');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', handleScroll);
+        handleScroll(); // Trigger on initial load
+        document.querySelectorAll('.tech-card').forEach(card => {
+    card.addEventListener('click', () => {
+        alert(`Tech: ${card.dataset.tech.toUpperCase()} - Powering Radiant with efficiency and speed.`);
+    });
+});
+
+    </script>
+
+</body>
+</html>

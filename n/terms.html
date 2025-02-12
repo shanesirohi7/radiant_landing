@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service - Radiant</title>
+    <link rel="icon" type="image/png" href="icon.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto+Mono:wght@400;700&display=swap">
+    <style>
+      body {
+          background-color: #000;
+          color: #fff;
+          font-family: 'Roboto Mono', monospace;
+          margin: 0;
+          overflow-x: hidden;
+          scroll-behavior: smooth;
+      }
+
+      section {
+          padding: 120px 0;
+          opacity: 0;
+          transform: translateY(50px);
+          transition: opacity 1s ease, transform 1s ease;
+      }
+
+      section.active {
+          opacity: 1;
+          transform: translateY(0);
+      }
+
+      .container {
+          width: 90%;
+          max-width: 1200px;
+          margin: 0 auto;
+          text-align: center;
+      }
+
+      h1 {
+          font-size: 3em;
+          margin-bottom: 20px;
+      }
+
+      h2 {
+          font-size: 2em;
+          margin-bottom: 15px;
+      }
+
+      p {
+          font-size: 1.2em;
+          line-height: 1.8;
+          margin-bottom: 20px;
+      }
+
+      footer {
+          background-color: #111;
+          padding: 40px 0;
+          text-align: center;
+          font-size: 1em;
+          color: #eee;
+      }
+
+      footer a {
+          color: #6f42c1;
+          text-decoration: none;
+          transition: color 0.3s ease;
+      }
+
+      footer a:hover {
+          color: #563d7c;
+      }
+    </style>
+</head>
+<body>
+
+    <section class="container">
+        <h1>Terms of Service</h1>
+        <p>Welcome to Radiant! By using our platform, you agree to the following terms and conditions.</p>
+        
+        <h2>1. Purpose of Radiant</h2>
+        <p>Radiant is designed for students to connect within their school communities. It is <strong>not</strong> intended as a dating platform. While friendships and connections may form, we do not encourage or facilitate dating.</p>
+        
+        <h2>2. Responsibility & Liability</h2>
+        <p>We are <strong>not responsible</strong> for any personal interactions, including dating or relationships formed on Radiant. Any issues arising from user interactions remain the sole responsibility of the individuals involved.</p>
+        
+        <h2>3. School & Institutional Liability</h2>
+        <p>Radiant operates independently and is <strong>not affiliated</strong> with any school. Schools cannot hold Radiant responsible for student activities on the platform.</p>
+        
+        <h2>4. Safety & Moderation</h2>
+        <p>We take steps to maintain a safe environment, including content moderation. However, users are responsible for their own safety and must report inappropriate behavior.</p>
+        
+        <h2>5. Age Requirements & Parental Guidance</h2>
+        <p>Radiant is intended for students. While we strive to create a safe space, parental guidance is advised, and users under 16 should use the platform with discretion.</p>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Radiant. All rights reserved. | <a href="privacy.html">Privacy Policy</a></p>
+        </div>
+    </footer>
+
+    <script>
+        const sections = document.querySelectorAll('section');
+
+        function handleScroll() {
+            sections.forEach(section => {
+                const triggerPoint = window.innerHeight * 0.8;
+                const sectionTop = section.getBoundingClientRect().top;
+
+                if (sectionTop < triggerPoint) {
+                    section.classList.add('active');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', handleScroll);
+        handleScroll();
+    </script>
+
+</body>
+</html>
