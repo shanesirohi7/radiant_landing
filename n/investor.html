@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.3">
+    <title>Investor | Radiant</title>
+    <link rel="icon" type="image/png" href="icon.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Radiant: The Future of Social Networking</h1>
+        <p>Built, Managed, and Scaled by Two 16-Year-Old High School Founders</p>
+    </header>
+    
+    <section class="parallax" id="vision">
+        <h2>Our Vision: Replacing Instagram & Facebook</h2>
+        <p>Social media today is broken. Fake engagement, doom scrolling, intrusive ads, and an algorithm that profits off addiction.</p>
+        <p><strong>Radiant is different.</strong> We are the first genuine social network designed for real connections without the manipulation.</p>
+        <p>We’re not just building another app. We’re <strong>rewriting how social networking works.</strong> No distractions. No wasted time. No doom scrolling. Just pure networking, real engagement, and an unstoppable movement.</p>
+    </section>
+
+    <section class="parallax" id="roadmap">
+        <h2>Funding Roadmap</h2>
+        <div class="timeline">
+            <div class="quarter">
+                <h3>Q1: Product Launch</h3>
+                <p>Develop and release the Radiant app and web platform, building an exclusive user base among high school students.</p>
+            </div>
+            <div class="quarter">
+                <h3>Q2: Expansion & User Growth</h3>
+                <p>Refine features, optimize user experience, and expand to other schools through targeted outreach.</p>
+            </div>
+            <div class="quarter">
+                <h3>Q3: Aggressive Scaling</h3>
+                <p>Execute paid marketing and influencer partnerships to rapidly increase adoption.</p>
+            </div>
+            <div class="quarter">
+                <h3>Q4: Total Market Domination</h3>
+                <p>Expand aggressively across Vasundhara, Indirapuram, and Ghaziabad schools, establishing Radiant as the go-to network.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="parallax" id="funding">
+        <h2>Why We Need Funding</h2>
+        <p>Building the next-gen social platform takes resources. Here’s where funding will be allocated:</p>
+        <ul>
+            <li>🚀 <strong>App Development & Scaling</strong>: Enhancing user experience & ensuring seamless performance.</li>
+            <li>💾 <strong>Backend Hosting & Database</strong>: Supporting millions of users as we scale.</li>
+            <li>🔌 <strong>API Integrations</strong>: Connecting Radiant to essential services & expanding functionality.</li>
+            <li>☁️ <strong>Cloud Infrastructure</strong>: Secure and high-performance storage solutions.</li>
+            <li>📣 <strong>Paid Marketing & Growth</strong>: Fueling rapid adoption and ensuring our network grows exponentially.</li>
+        </ul>
+    </section>
+    
+    <section class="parallax" id="valuation">
+        <h2>Funding & Valuation</h2>
+        <p>We are raising <strong>₹5 Lakhs</strong> to execute our roadmap and secure Radiant’s dominance in the market.</p>
+        <p>Investors will gain early-stage access to the next social media giant— a network built for real engagement, not fake metrics.</p>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Radiant. Built by Disruptors, For Disruptors.</p>
+    </footer>
+    <script>
+        const sections = document.querySelectorAll('section');
+
+        function handleScroll() {
+            sections.forEach(section => {
+                const triggerPoint = window.innerHeight * 0.8;
+                const sectionTop = section.getBoundingClientRect().top;
+                if (sectionTop < triggerPoint) {
+                    section.classList.add('active');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', handleScroll);
+        handleScroll(); // Trigger on initial load
+    </script>
+</body>
+</html>

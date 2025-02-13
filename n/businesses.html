@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.3">
+    <title>Businesses | Radiant</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="icon.png">
+</head>
+<body>
+    <header>
+        <h1>Radiant: The Future of Smart Advertising</h1>
+        <p>Hyper-Targeted. High Engagement. Zero Wasted Ad Spend.</p>
+    </header>
+    
+    <section class="parallax" id="why-radiant">
+        <h2>Why Advertise on Radiant?</h2>
+        <p>Unlike Instagram and Facebook, Radiant connects businesses directly with their most relevant audience—students who actually engage. No spam, no wasted impressions, just high-converting marketing.</p>
+        <ul>
+            <li>🎯 Laser-Targeted Ads: Ads are shown only to students who actually care about your product.</li>
+            <li>💡 Smart Data Insights: Use location, school, interests, and real engagement metrics to maximize conversions.</li>
+            <li>🚫 No Annoying Ads: We ensure ads feel like organic content, not interruptions.</li>
+            <li>💰 Higher ROI: Stop paying for fake clicks & wasted impressions—Radiant delivers real customers.</li>
+        </ul>
+    </section>
+    
+    <section class="parallax" id="how-it-works">
+        <h2>How It Works</h2>
+        <p>Radiant redefines digital advertising by prioritizing user engagement and precise ad placement.</p>
+        <div class="steps">
+            <div class="step">
+                <h3>1. Define Your Audience</h3>
+                <p>Target users based on school, class, location, interests, and behaviors.</p>
+            </div>
+            <div class="step">
+                <h3>2. Seamless Ad Integration</h3>
+                <p>Ads appear in non-intrusive formats that blend seamlessly into content.</p>
+            </div>
+            <div class="step">
+                <h3>3. AI-Powered Optimization</h3>
+                <p>Our algorithm learns and improves—showing ads to users most likely to convert.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="parallax" id="advantages">
+        <h2>Radiant vs. Traditional Advertising</h2>
+        <table>
+            <tr>
+                <th>Feature</th>
+                <th>Radiant</th>
+                <th>Instagram/Facebook</th>
+            </tr>
+            <tr>
+                <td>Audience Targeting</td>
+                <td>🔹 School, class, location & interests-based targeting</td>
+                <td>❌ Broad, ineffective, high-spend targeting</td>
+            </tr>
+            <tr>
+                <td>Ad Experience</td>
+                <td>✅ Non-intrusive, engaging, and relevant</td>
+                <td>❌ Annoying, spammy, and ignored</td>
+            </tr>
+            <tr>
+                <td>Conversion Rate</td>
+                <td>🔥 Higher due to true audience relevance</td>
+                <td>❌ Low due to random placements</td>
+            </tr>
+            <tr>
+                <td>Ad Cost</td>
+                <td>💰 Cost-efficient with real engagement</td>
+                <td>💸 Overpriced with low ROI</td>
+            </tr>
+        </table>
+    </section>
+    
+    <section class="parallax" id="get-started">
+        <h2>Start Advertising on Radiant Today</h2>
+        <p>Radiant is the next-gen platform for businesses to reach high-school students effectively and affordably.</p>
+        <p>Early advertisers get priority access and discounted rates—be part of the revolution.</p>
+        <a href="contact.html" class="cta-button">Get Started</a>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Radiant. Smarter Ads. Better Results.</p>
+    </footer>
+    
+    <script>
+        const sections = document.querySelectorAll('section');
+        function handleScroll() {
+            sections.forEach(section => {
+                const triggerPoint = window.innerHeight * 0.8;
+                const sectionTop = section.getBoundingClientRect().top;
+                if (sectionTop < triggerPoint) {
+                    section.classList.add('active');
+                }
+            });
+        }
+        window.addEventListener('scroll', handleScroll);
+        handleScroll();
+    </script>
+</body>
+</html>

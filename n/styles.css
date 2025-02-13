@@ -1,0 +1,198 @@
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+    overflow-x: hidden;
+    scroll-behavior: smooth; /* Smooth scrolling */
+}
+
+section {
+    padding: 120px 0; /* Increased padding */
+    opacity: 0;
+    transform: translateY(50px); /* Increased initial movement */
+    transition: opacity 1s ease, transform 1s ease; /* Slower transitions */
+}
+
+section.active {
+    opacity: 1;   
+    transform: translateY(0);
+}
+
+.parallax {
+    background-image: url('bg.avif');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    min-height: 700px; /* Increased height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+.parallax h1 {
+    font-size: 6em; /* Larger font size */
+    margin-bottom: 30px;
+    transition: transform 1s ease, opacity 1s ease; /* Parallax title transitions */
+}
+
+.parallax p {
+    font-size: 2em; /* Larger font size */
+    margin-bottom: 50px;
+    transition: transform 1s ease, opacity 1s ease; /* Parallax subtitle transitions */
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px; /* Increased max-width */
+    margin: 0 auto;
+    text-align: center;
+}
+
+.logo {
+    width: 100px; /* Larger logo */
+    margin-bottom: 40px;
+    display: block;
+    border-radius: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: transform 1s ease, opacity 1s ease; /* Logo transitions */
+}
+
+h2 {
+    font-size: 2.5em; /* Larger font size */
+    margin-bottom: 30px;
+    transition: transform 1s ease, opacity 1s ease; /* Heading transitions */
+}
+
+p {
+    font-size: 1.2em; /* Larger font size */
+    line-height: 1.8; /* Improved line height */
+    margin-bottom: 30px;
+    transition: transform 1s ease, opacity 1s ease; /* Paragraph transitions */
+}
+
+ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0;
+    margin: 0 auto; /* Center the list */
+    max-width: 800px; /* Set a maximum width for the list */
+}
+
+li {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    text-align: left; /* Align list items to the left */
+    transition: transform 1s ease, opacity 1s ease; /* List item transitions */
+}
+
+strong {
+    font-weight: bold;
+}
+
+/* ... (Funding, Positions, Investor Relations styles remain the same) */
+
+/* Added transitions to Funding and Position elements */
+.funding-meter, .position-listing {
+    transition: transform 1s ease, opacity 1s ease;
+}
+
+/* Added transitions to Investor Relations elements */
+#investors h2, #investors p, #investors a {
+    transition: transform 1s ease, opacity 1s ease;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #111;
+    padding: 40px 0;
+    text-align: center;
+    font-size: 1em;
+    color: #eee;
+    transition: transform 1s ease, opacity 1s ease; /* Footer transitions */
+}
+
+footer a {
+    color: #6f42c1;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #563d7c;
+}
+.tech-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+gap: 20px;
+margin-top: 20px;
+justify-items: center;
+}
+
+.tech-card {
+background: #111;
+padding: 20px;
+border-radius: 12px;
+text-align: center;
+transition: transform 0.3s ease, background 0.3s ease;
+cursor: pointer;
+}
+
+.tech-card:hover {
+transform: scale(1.1);
+background: #222;
+}
+
+.tech-card img {
+width: 60px;
+height: 60px;
+margin-bottom: 10px;
+}
+
+.tech-card h3 {
+font-size: 1em;
+color: #fff;
+}
+.navbar {
+margin-top: 20px;
+width: 100%;
+position: fixed;
+top: 0;
+left: 0;
+background: rgba(0, 0, 0, 0.8);
+padding: 20px 0;
+text-align: center;
+z-index: 1000;
+}
+
+.nav-button {
+display: inline-block;
+background: #6f42c1;
+color: white;
+font-size: 1.5em; /* Default size */
+font-family: 'Poppins', sans-serif;
+font-weight: bold;
+text-decoration: none;
+padding: 15px 30px;
+border-radius: 50px;
+margin: 0 15px;
+transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.nav-button:hover {
+background: #563d7c;
+transform: scale(1);
+}
+
+/* 3x size for phone screens */
+@media (max-width: 768px) {
+.nav-button {
+  font-size: 5em; /* 3x scaling on small screens */
+  padding: 50px 70px;
+  margin: 10px 0;
+  display: block; /* Stack buttons on smaller screens */
+}
+}
